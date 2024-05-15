@@ -1,18 +1,13 @@
--- Quick start
+# Sample Hardhat Project
 
-git clone https://github.com/marioruben/HardhatETH.git
-cd HardhatETH
-npm install
+This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
 
--- Once installed let´s configure the network
+Try running some of the following tasks:
 
-Go to the file .env and
-put your mnemonic key and RPC_NODE
-
-compile the contract:
-
-npx hardhat compile
-
-to execute contract HelloWorld :
-
-npx hardhat ignition deploy ignition/modules/HelloWorld.ts --network sepolia
+```shell
+npx hardhat help
+npx hardhat test
+REPORT_GAS=true npx hardhat test
+npx hardhat node
+npx hardhat ignition deploy ./ignition/modules/Lock.ts
+```
